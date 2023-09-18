@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    margin: auto;
+    width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 70px;
+}
+
+.social {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0 10px;
+}
+.social>li>a {
+    text-decoration: none;
+    color: #4C4637;
+}
+.social>li>a:hover {
+    color: #ffffff;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-bar li a {
+    background-color: #000;
+    color: #fff;
+    width: 500px;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    
+}
+
+.nav-bar li a:hover {
+    background-color:#f4f4f4;
+    color: black;
+}
+
+.nav-bar > li {
+    float: left;
+}
+
+.nav-bar > li ul {
+    display: none;
+    position: absolute;
+    z-index: 999;
+}
+
+.nav-bar > li:hover > ul {
+    display: block;
+}
+
+.cuerpo {
+    width: 100%;
+    background: url('../img/src/log_2.jpg');
+}
+
+h3 {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+    border-bottom: 1px solid #4C4637;
+    padding: 8px;
+    color: #C95914;
+    background: #f5e5b8;
+}
+.carta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.carta-producto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0 0 10px;
+    width: 40%;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.nuevo-cartel {
+    position: absolute;
+    top: 0;
+    right: 30%;
+    background-color: #f00;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+.prod-img {
+    height: 160px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    width: 100%;
+}
+
+.prod-nombre, .prod-descripcion, .precio {
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+    
+}
+
+.prod-nombre {
+    font-size: 17px;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+.prod-descripcion {
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.precio {
+    font-weight: bold;
+    padding: 5px;
+}
+
+@media screen and (max-width: 480px) {
+    .nav-bar {
+        height: 110px;
+    }
+    .logo-container {
+        width: 10%;
+    }
+    .cuerpo {
+        margin-top: 110px
+    }
+    .nuevo-cartel {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
